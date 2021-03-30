@@ -44,7 +44,7 @@ function dgner_wp_enqueue_scripts() {
     </script>
 <?php
 }
-add_filter('woocommerce_form_field_text', 'dgner_woocommerce_form_field_text', 20, 2); // 우편번호 찾기 버튼의 구조를 생성하고 API와 연결합니다.
+add_filter( 'woocommerce_form_field_text', 'dgner_woocommerce_form_field_text', 20, 2 ); // 우편번호 찾기 버튼의 구조를 생성하고 API와 연결합니다.
 function dgner_woocommerce_form_field_text( $fields, $key ) {        
     $postcode_search_button = __( '우편번호 찾기', 'k-woocommerce' );
     if ($key === 'billing_postcode_search') {
