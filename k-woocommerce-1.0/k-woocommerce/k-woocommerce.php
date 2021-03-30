@@ -61,11 +61,11 @@ function dgner_woocommerce_default_address_fields( $fields ) {
     unset($fields['company']);
     unset($fields['state']);
     unset($fields['city']);
-    unset($fields['country']);
     $fields['first_name']['priority'] = 50;
     $fields['postcode']['priority'] = 60;
     $fields['address_1']['priority'] = 70;
     $fields['address_2']['priority'] = 80;
+    $fields['country'] = array( 'priority' => 90, 'required' => false, 'type' => 'country' );
     return $fields;
 }
 add_filter( 'woocommerce_billing_fields', 'dgner_woocommerce_billing_fields' ); // 청구주소 우편번호 찾기 버튼의 필드를 생성합니다. 청구주소 성과 이름 필드를 하나로(last_name 필드는 woocommerce_default_address_fields에서 제외됨) 합칩니다. 청구주소 이메일을 읽기 전용으로 만들어 변경할 수 없도록 합니다.
