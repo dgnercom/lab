@@ -15,7 +15,7 @@ function dgner_settings_link( $links ) {  // 플러그인 전용 도네이션 �
 }
 $dgner_plugin = plugin_basename(__FILE__);
 add_filter("plugin_action_links_$dgner_plugin", 'dgner_settings_link' );
-add_action( 'wp_enqueue_scripts', 'dgner_wp_enqueue_scripts' ); // function.php에 직접 기입하는 경우, 18번째 줄이 Start Point 입니다. 카카오(다음) 우편번호 서비스 JS API를 지정 페이지에만 불러옵니다.
+add_action( 'wp_enqueue_scripts', 'dgner_wp_enqueue_scripts' ); // function.php에 직접 기입하는 경우, 18번째 줄이 Start Point 입니다. 카카오(다음) 우편번호 서비스 JS API를 특정 페이지에만 불러옵니다.
 function dgner_wp_enqueue_scripts() {        
     if ( ! is_account_page() && ! is_checkout() ) {
         return;
