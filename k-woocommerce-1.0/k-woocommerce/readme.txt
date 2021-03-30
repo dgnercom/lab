@@ -1,4 +1,4 @@
-﻿=== 우커머스 한국형 주소, Korea Address ===
+=== 우커머스 한국형 주소, Korea Address ===
 Contributors: dgner
 Tags: all in one, woocommerce, korea, korean, postcode, address, search, designer, dgner, daum, kakao, 올인원, 우커머스, 한국, 한국형, 우편번호, 주소, 검색, 디자이너, 디지앤이알, 다음, 카카오
 Requires at least: 5.5
@@ -20,9 +20,10 @@ Github 원본의 공유는 100% 자유입니다. 응용시 출저(https://github
 본 플러그인은 설치 즉시 적용되며, 다음과 같은 사항들이 포함됩니다.
 
 * 카카오(다음) 우편번호 서비스 JS API를 활용한 우편번호 검색 버튼 생성
+* JS를 특정 페이지(Checkout & My Account)에서만 불러오도록 설정
 * 우커머스 Billing & Shipping 필드를 한국인들이 선호하는 순서로 변경
-* 일부 필수 항목을 선택 항목으로 변경 (필요시 CSS로 숨김 처리 가능)
-* 이메일을 변경할 수 없도록 만듬 (필요시 CSS로 연하게 처리 가능)
+* 일부 필수 항목을 선택 항목으로 변경(필요시 CSS로 숨김 처리 가능)
+* 이메일을 변경할 수 없도록 만듬(필요시 CSS로 연하게 처리 가능)
 * 배송이 필요 없는 상품이 장바구니에 포함된 경우 주문 간소화
 * 워드프레스 혹은 우커머스 버전 업데이트에 의한 영향 최소화
 
