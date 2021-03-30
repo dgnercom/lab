@@ -8,7 +8,7 @@
  * Author URI: https://dgner.com
  * License: GPL3
  */
-function dgner_settings_link( $links ) {  // 플러그인 전용 도네이션 링크이므로 function.php에 포함하지 마세요. 응용 및 공유는 100% 자유로우며 출저만 명확히 해주시기 바랍니다. 
+function dgner_settings_link( $links ) {  // 플러그인 전용 도네이션 링크이므로 function.php에 포함하지 마세요. 간단한 스니펫이라 응용 및 공유는 100% 자유로우며 상단 Plugin URI에 기입된 출저 표기만 해주시기 바랍니다.
     $donate_link = __( '<a target="_blank" style="color:#a050c8;font-weight:bold;" href="https://dgner.com/wp-content/uploads/dgner-korea-donation-link-designer-community-for-design-news-design-education-design-events-design-influencers-design-tools-design-forum-and-social-network.png">커피 한잔</a>', 'k-woocommerce' );
     array_unshift($links, $donate_link);
     return $links;
