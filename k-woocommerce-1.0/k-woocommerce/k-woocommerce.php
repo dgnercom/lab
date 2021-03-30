@@ -68,14 +68,14 @@ function dgner_woocommerce_default_address_fields( $fields ) {
     $fields['country'] = array( 'priority' => 90, 'required' => false, 'type' => 'country' );
     return $fields;
 }
-add_filter( 'woocommerce_billing_fields', 'dgner_woocommerce_billing_fields' ); // 청구주소 우편번호 찾기 버튼의 필드를 생성합니다. 청구주소 성과 이름 필드를 하나로(last_name 필드는 woocommerce_default_address_fields에서 제외됨) 합칩니다. 청구주소 이메일을 읽기 전용으로 만들어 변경할 수 없도록 합니다.
+add_filter( 'woocommerce_billing_fields', 'dgner_woocommerce_billing_fields' ); // 청구주소 우편번호 찾기 버튼의 필드를 생성합니다. 청구주소 성과 이름 필드를 하나로(last_name 필드는 woocommerce_default_address_fields에서 제거됨) 합칩니다. 청구주소 이메일을 읽기 전용으로 만들어 변경할 수 없도록 합니다.
 function dgner_woocommerce_billing_fields( $fields ) {        
     $fields['billing_postcode_search'] = array( 'priority' => 65 );
     $fields['billing_first_name']['label'] = 'Name';
     $fields['billing_email']['custom_attributes'] = array( 'readonly' => true );
     return $fields;
 }
-add_filter( 'woocommerce_shipping_fields', 'dgner_woocommerce_shipping_fields' ); // 배송주소 우편번호 찾기 버튼의 필드를 생성합니다. 배송주소 성과 이름 필드를 하나로(last_name 필드는 woocommerce_default_address_fields에서 제외됨) 합칩니다.
+add_filter( 'woocommerce_shipping_fields', 'dgner_woocommerce_shipping_fields' ); // 배송주소 우편번호 찾기 버튼의 필드를 생성합니다. 배송주소 성과 이름 필드를 하나로(last_name 필드는 woocommerce_default_address_fields에서 제거됨) 합칩니다.
 function dgner_woocommerce_shipping_fields( $fields ) {        
     $fields['shipping_postcode_search'] = array( 'priority' => 65 );
     $fields['shipping_first_name']['label'] = 'Name';
