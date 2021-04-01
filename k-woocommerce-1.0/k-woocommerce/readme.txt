@@ -15,9 +15,10 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 우커머스 한국형 주소와 우편번호 검색 기능을 찾으시는 분들을 위해 올인원 플러그인으로 배포합니다.
 본 플러그인의 원본은 Github에 그대로 공유됩니다. 수정이 필요한 경우 function.php에 직접 적용해주세요.
 사용자 피드백에 따른 실시간 지원 및 업데이트는 불가능하며, 워드프레스의 버전 업데이트에만 대응합니다.
-Github 원본의 공유는 100% 자유입니다. 응용시 출저(https://github.com/dgnercom) 표기만 부탁드립니다.
+Github 원본의 공유는 100% 자유입니다. 응용시 출저 https://github.com/dgnercom 표기만 부탁드립니다.
 
-본 플러그인은 설치 즉시 적용되며, 다음과 같은 사항들이 포함됩니다.
+혹시 유용하셨다면? 제 카카오 페이 QR 링크 https://dgner.com/wp-content/uploads/coffee.png 에서
+커피 한잔 부탁드려요 :) 본 플러그인은 설치 즉시 적용되며, 다음과 같은 사항들이 포함됩니다.
 
 * 카카오(다음) 우편번호 서비스 JS API를 활용한 우편번호 검색 버튼 생성
 * JS를 특정 페이지(Checkout & My Account)에서만 불러오도록 설정
