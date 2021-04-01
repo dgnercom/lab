@@ -89,5 +89,5 @@ function dgner_woocommerce_checkout_fields( $fields ) {
     else {
     }
     return $fields;
-}                    // function.php에 직접 기입하는 경우, 99번째 줄이 End Point 입니다.
+} // function.php에 직접 기입하는 경우, 99번째 줄이 End Point 입니다.
 ?>
