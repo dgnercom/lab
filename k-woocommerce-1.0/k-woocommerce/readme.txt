@@ -3,7 +3,7 @@ Contributors: dgner
 Tags: all in one, woocommerce, korea, korean, postcode, address, search, designer, dgner, daum, kakao, 올인원, 우커머스, 한국, 한국형, 우편번호, 주소, 검색, 디자이너, 디지앤이알, 다음, 카카오
 Requires at least: 5.5
 Tested up to: 5.7
-Stable tag: 5.4
+Stable tag: 1.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
