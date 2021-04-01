@@ -13,7 +13,7 @@ function dgner_wp_enqueue_scripts() {
     if ( ! is_account_page() && ! is_checkout() ) {
         return;
     }
-    wp_enqueue_script( 'woocommerce-korea-postcode', '//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js', array(), null, true );
+    wp_enqueue_script( 'k-woocommerce-postcode', '//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js', array(), null, true );
 ?>
     <script type="text/javascript">
         function billingPostcodeSearch() {        
