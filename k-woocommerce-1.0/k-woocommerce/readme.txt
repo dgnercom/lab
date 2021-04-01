@@ -12,6 +12,12 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
+https://postcode.map.daum.net/guide
+This plug in made from Kakao(Daum) Open API.
+This plugin made from specific Korea Postcode rule.
+Developer has no take responsibility for management.
+This plugin user has responsibility for all problems.
+
 우커머스 한국형 주소와 우편번호 검색 기능을 찾으시는 분들을 위해 올인원 플러그인으로 배포합니다.
 본 플러그인의 원본은 Github에 그대로 공유됩니다. 수정이 필요한 경우 function.php에 직접 적용해주세요.
 사용자 피드백에 따른 실시간 지원 및 업데이트는 불가능하며, 워드프레스의 버전 업데이트에만 대응합니다.
