@@ -35,7 +35,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 선택 항목 : #billing_postcode_search_field, #billing_country_field, #billing_phone_field, #shipping_postcode_search_field, #shipping_country_field
 
 읽기 전용으로 변경된 이메일 주소의 경우 CSS로 연하게 처리하세요.
-예시 : #billing_email {pointer-events:none !important; background:#eeeeee !important; color:#aaaaaa !important;}
+예시 : #billing_email {pointer-events:none !important; color:#aaaaaa !important; background:#eeeeee !important;}
 
 우편번호 버튼의 경우 CSS로 디자인 변경이 가능합니다.
 예시 : .postcode-button {color:#ffffff !important; background:#444444 !important;}
