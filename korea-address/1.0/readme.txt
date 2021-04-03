@@ -16,7 +16,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 • The services’ a terms of use and/or privacy policies are as follows : https://postcode.map.daum.net/guide
 • Developer has no take responsibility for management. This plugin user has responsibility for all problems.
 
-※ 본 플러그인은 설치 즉시 적용되며, 다음과 같은 사항들이 포함됩니다.
+※ 변경사항과 주의사항입니다. 설치 전 반드시 읽어주세요! ※
 * 카카오(다음) 우편번호 서비스 JS API를 활용한 우편번호 검색 버튼 생성
 * JS를 특정 페이지(Checkout & My Account)에서만 불러오도록 설정
 * 우커머스 Billing & Shipping 필드를 한국인들이 선호하는 순서로 변경
