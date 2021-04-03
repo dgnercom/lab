@@ -45,7 +45,7 @@ QR 링크 : https://dgner.com/wp-content/uploads/coffee.png
 
 == Installation ==
 
-1. Upload 'k-woocommerce' folder to the '/wp-content/plugins/' directory.
+1. Upload 'korea-address' folder to the '/wp-content/plugins/' directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 
