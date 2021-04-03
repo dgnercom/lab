@@ -17,6 +17,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 • Developer has no take responsibility for management. This plugin user has responsibility for all problems.
 
 ※ 주의사항을 포함한 플러그인 기능 설명입니다. 반드시 읽어주세요! ※
+* 별도의 설정 없이 설치 즉시 적용되며, 5kb 이하로 매우 가벼운 스니펫
 * 카카오(다음) 우편번호 서비스 JS API를 활용한 우편번호 검색 버튼 생성
 * JS를 특정 페이지(Checkout & My Account)에서만 불러오도록 설정
 * 우커머스 Billing & Shipping 필드를 한국인들이 선호하는 순서로 변경
