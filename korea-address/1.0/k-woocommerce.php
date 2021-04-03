@@ -8,7 +8,7 @@
  * Author URI: https://dgner.com
  * License: GPL3
  */
-add_action( 'wp_enqueue_scripts', 'dgner_wp_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'dgner_wp_enqueue_scripts' ); // function.php 파일에 직접 붙여넣을 경우 Start Point. 카카오(다음) 우편번호 js api를 특정 페이지에만 불러옵니다. 
 function dgner_wp_enqueue_scripts() {        
     if ( ! is_account_page() && ! is_checkout() ) {
         return;
@@ -37,7 +37,7 @@ function dgner_wp_enqueue_scripts() {
     </script>
 <?php
 }
-add_filter( 'woocommerce_form_field_text', 'dgner_woocommerce_form_field_text', 20, 2 );
+add_filter( 'woocommerce_form_field_text', 'dgner_woocommerce_form_field_text', 20, 2 ); // 우편번호 찾기 버튼의 구성을 설정합니다.
 function dgner_woocommerce_form_field_text( $fields, $key ) {        
     $postcode_search_button = __( '우편번호 찾기', 'k-woocommerce' );
     if ($key === 'billing_postcode_search') {
@@ -48,7 +48,7 @@ function dgner_woocommerce_form_field_text( $fields, $key ) {
     }
     return $fields;
 }
-add_filter ( 'woocommerce_default_address_fields' , 'dgner_woocommerce_default_address_fields' );
+add_filter ( 'woocommerce_default_address_fields' , 'dgner_woocommerce_default_address_fields' ); // 한국형 주소로 바꾸기 위해 필요없는 필드를 제외하고 우선순위를 변경합니다. 
 function dgner_woocommerce_default_address_fields( $fields ) {        
     unset($fields['last_name']);
     unset($fields['company']);
@@ -61,20 +61,20 @@ function dgner_woocommerce_default_address_fields( $fields ) {
     $fields['country'] = array( 'priority' => 90, 'required' => false, 'type' => 'country' );
     return $fields;
 }
-add_filter( 'woocommerce_billing_fields', 'dgner_woocommerce_billing_fields' );
+add_filter( 'woocommerce_billing_fields', 'dgner_woocommerce_billing_fields' ); // Billing 우편번호 찾기 버튼의 필드를 생성합니다. 성과 이름을 하나로(이름 필드는 상단에서 제외) 합칩니다. 이메일 필드를 읽기 전용(유저가 직접 수정을 못하도록)으로 만듭니다.
 function dgner_woocommerce_billing_fields( $fields ) {        
     $fields['billing_postcode_search'] = array( 'priority' => 65 );
     $fields['billing_first_name']['label'] = 'Name';
     $fields['billing_email']['custom_attributes'] = array( 'readonly' => true );
     return $fields;
 }
-add_filter( 'woocommerce_shipping_fields', 'dgner_woocommerce_shipping_fields' );
+add_filter( 'woocommerce_shipping_fields', 'dgner_woocommerce_shipping_fields' ); // Shipping 우편번호 찾기 버튼의 필드를 생성합니다. 성과 이름을 하나로(이름 필드는 상단에서 제외) 합칩니다.
 function dgner_woocommerce_shipping_fields( $fields ) {        
     $fields['shipping_postcode_search'] = array( 'priority' => 65 );
     $fields['shipping_first_name']['label'] = 'Name';
     return $fields;
 }
-add_filter( 'woocommerce_checkout_fields', 'dgner_woocommerce_checkout_fields' );
+add_filter( 'woocommerce_checkout_fields', 'dgner_woocommerce_checkout_fields' ); // 장바구니에 배송이 필요없는 가상 상품만 있는 경우, 일부 주소 필드를 자동으로 비활성화 합니다. 
 function dgner_woocommerce_checkout_fields( $fields ) {        
     $only_virtual = true;
     foreach( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -89,5 +89,5 @@ function dgner_woocommerce_checkout_fields( $fields ) {
     else {
     }
     return $fields;
-}
+}  // function.php 파일에 직접 붙여넣을 경우 End Point.
 ?>
