@@ -8,7 +8,7 @@
  * Author URI: https://dgner.com
  * License: GPL3
  */
-add_action( 'wp_enqueue_scripts', 'dgner_wp_enqueue_scripts' ); // function.php 파일에 직접 붙여넣을 경우 Start Point. 카카오(다음) 우편번호 js api를 특정 페이지에만 불러옵니다. 
+add_action( 'wp_enqueue_scripts', 'dgner_wp_enqueue_scripts' ); // function.php 파일에 직접 붙여넣을 경우 Start Point. 카카오(다음) 우편번호 JS API를 특정 페이지에만 불러옵니다. 
 function dgner_wp_enqueue_scripts() {        
     if ( ! is_account_page() && ! is_checkout() ) {
         return;
