@@ -1,4 +1,4 @@
-﻿=== 우커머스 한국형 주소, Korea Address ===
+=== 우커머스 한국형 주소, Korea Address ===
 Contributors: dgner
 Tags: all in one, woocommerce, korea, korean, postcode, address, search, designer, dgner, daum, kakao, 올인원, 우커머스, 한국, 한국형, 우편번호, 주소, 검색, 디자이너, 디지앤이알, 다음, 카카오
 Requires at least: 5.5
